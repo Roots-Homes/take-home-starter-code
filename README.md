@@ -50,7 +50,8 @@ General rules:
 - State management may be necessary. Use any library if needed or store in local `useState`.
 - I've supplied you with a **Mapbox API token** should you choose to create a map component
 - You can use built-in fetch/Axios for API requests or use Tanstack query
-- I genuinely do not care if you use our 
+- I genuinely do not care if you use the same libraries we use or if you use ones you are more comfortable with.
+
 ### Getting Started
 
 **Pre-Setup:**
