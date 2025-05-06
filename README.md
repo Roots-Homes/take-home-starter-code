@@ -7,25 +7,25 @@ We are not expecting perfection. We want to see how you tackle a new challenge.
 
 ### Work Style
 As I mentioned in the interview, we have plenty of work on the Frontend and Backend. So, for this assignment I'd like you to choose a path below based on your own interest. This does not lock you into this workstype if hired, but I am hoping it allows for you to best demonstrate your abilities, wherever they may lie.
-- *80% Frontend / 20% Backend* - Write a simple API endpoint or two to fetch some data and then really focus on creating a beatiful, interactive, responsive interface. We have many mobile customers, so bonus points if your layout works or adapts to mobile resolution. More points will be given to the cleanliness and design of the interface. Animations, hover effects, trendy visuals encouraged tastefully done. 
-- *50% Frontend / 50% Backend* - Write a simple, functional UI that is moderately complex. The UI should serve a relatively robust API, allowing for basic CRUD operations and some interesting/complex queries. 
-- *20% Frontend / 80% Backend* - You are allowed to implement a backend engineer's UI (i.e. barebones, ugly, but functional). Focus on a complex and interesting API with data processing functions, complex queries, and detailed/useful logging. 
+- **80% Frontend / 20% Backend** - Write a simple API endpoint or two to fetch some data and then really focus on creating a beatiful, interactive, responsive interface. We have many mobile customers, so bonus points if your layout works or adapts to mobile resolution. More points will be given to the cleanliness and design of the interface. Animations, hover effects, trendy visuals encouraged tastefully done. 
+- **50% Frontend / 50% Backend** - Write a simple, functional UI that is moderately complex. The UI should serve a relatively robust API, allowing for basic CRUD operations and some interesting/complex queries. 
+- **20% Frontend / 80% Backend** - You are allowed to implement a backend engineer's UI (i.e. barebones, ugly, but functional). Focus on a complex and interesting API with data processing functions, complex queries, and detailed/useful logging. 
 
 ### Challenges
 I'd like you to focus on one or two of the below challenges, depending on your preferred work style selected above. These are open ended, not all subpoints need to be addressed. Just build something you find interesting and useful.
-- Map Component: 
+- **Map Component:**
   - Implement a map that displays listings markers within the map region. 
   - Make map markers slightly interactive, allowing for favoriting or labeling or displaying more info on click. Can you save favorited state locally?. 
   - If possible, implement some kind of filtering. Let the user filter the map by price, assumability, listing age, status, etc. 
   - Consider advanced map features like draw/area search, clustering, or rendering hundreds of markers.
   - Make sure the map is performant and runs well even with lots of data displayed
-- Dashboard: 
+- **Dashboard:**
   - Create a dashboard that shows interesting insights about our data
   - Create tables and your own charts (or via a chart/diagram library) to display information
   - Examples of things you could answer through data: What does the price distribution of listings look like? Where are our assumable listings? How often are listings updated? How long do listings stay on market? What does the age profile and balance of our assumable mortgages look like?
   - Is dashboard data fetched live or on refresh?
   - In our real databases, we are receiving hundreds of raw listings and generating hundreds of listings daily. How can we visualize trends over time? What temporal information may be interesting to see?
-- Data Processor:
+- **Data Processor:**
   - Create a processor class or series of functions that can process RawListingData and generate Listings. Keep in mind field types and values may not always be 100% consistent. 
   - Consider a similar processor that takes in RawLoanData and generates Loans. 
   - You do not actually have to create database entries for the Listings or Loans. You could create an endpoint that takes in a date range, finds all raw listings in that date range, and returns normalized data for those listings in JSON format. 
@@ -37,29 +37,30 @@ Core principals I am looking for:
 - Creativity - Is your UI creative, sharp, clean, and/or cute? Does your API solve an interesting problem or serve valuable information?
 - Error Handling - Are types checked? Optional chaining? Are try/catch blocks implemented in the API?
 - Commit Structure - Are you making regular commits? Do your commits make sense?
+- Typing - Are you creating interfaces for props? Did you create Types/Interfaces for the key variables? (don't worry, you can still use `any` most of the time)
 
 -----
 
 ## Rules and Guidance
 General rules:
 - Use our site for design and functionality inspiration: https://roots.homes (Lauren loves the green/black color scheme ([neobrutalism](https://www.neobrutalism.dev/) adjacent), I love sleek modern designs)
-- AI use is actively encouraged, but make sure you are able to intelligently speak about your code and what it does. Also, I _highly encourage_ you to remove ChatGPT comments and write _your own code comments_.
-- You can install whatever packages you want into the application so long as it still builds and runs
+- **AI use is actively encouraged**, but make sure you are able to intelligently speak about your code and what it does. Also, I _highly encourage_ you to remove ChatGPT comments and write _your own code comments_.
+- **You can install whatever packages you want** into the application so long as it still builds and runs
 - I have installed Chakra UI (3.0) as a design library but you are welcome to use Tailwind (also installed) or any other design library for frontend work
 - State management may be necessary. Use any library if needed or store in local `useState`.
-- I've supplied you with a Mapbox API token should you choose to create a map component
+- I've supplied you with a **Mapbox API token** should you choose to create a map component
 - You can use built-in fetch/Axios for API requests or use Tanstack query
+- I genuinely do not care if you use our 
+### Getting Started
 
-### App Setup
-
-Pre-Setup:
+**Pre-Setup:**
 1. Click `Use this template` button on Github
 2. Create a new public repository (so that it can be shared with me later)
 3. Download the code
+4. Make sure you have `pnpm` [installed on your machine](https://pnpm.io/installation) first:
+  `corepack prepare pnpm@latest --activate`
 
-To run the project, make sure you have `pnpm` [installed on your machine](https://pnpm.io/installation) first:
-`corepack prepare pnpm@latest --activate`
-
+**App Setup:**
 1. Add environment variables to the .env file
 2. Run `source .env` to load the variables
 3. Run `pnpm i` to install all packages
